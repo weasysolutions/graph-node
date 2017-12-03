@@ -1,0 +1,30 @@
+{
+  "name": "graph-node",
+  "version": "0.0.1",
+  "description": "module to manage graph in nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cereceres/graph-node.git"
+  },
+  "keywords": [
+    "graph",
+    "numeric",
+    "json",
+    "module",
+    "math",
+    "stats"
+  ],
+  "author": "Jesus Cereceres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cereceres/graph-node/issues"
+  },
+  "homepage": "https://github.com/Cereceres/graph-node#readme",
+  "dependencies": {
+    "node-uid": "^0.1.3"
+  }
+}
