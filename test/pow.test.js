@@ -4,14 +4,25 @@ const Graph = require('../index');
 const graph = new Graph();
 
 describe('test to graph', () => {
-    it('should add the node with setNode', () => {
+    it('should multiply the matrices', () => {
         const node = {};
         const id2 = graph.setNode(node);
         const id1 = graph.setNode(node);
         graph.setEdge(id1, id2, {});
         const array = graph._pow();
-        console.log(array);
-        console.log(graph.nodes);
-        assert(array.length === graph.nodes * graph.nodes);
+        assert(array.length === 4);
+        assert.deepEqual(array.map(({ edge }) => edge), [ 0, 0, 0, 0 ]);
+    });
+
+    it('should multiply the matrices', () => {
+        const localGraph = new Graph();
+        const node = {};
+        const id2 = localGraph.setNode(node);
+        const id1 = localGraph.setNode(node);
+        localGraph.setEdge(id1, id2, {});
+        localGraph.setEdge(id2, id1, {});
+        const array = localGraph._pow();
+        assert(array.length === 4);
+        assert.deepEqual(array.map(({ edge }) => edge), [ 1, 0, 0, 1 ]);
     });
 });
