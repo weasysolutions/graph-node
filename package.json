@@ -1,5 +1,5 @@
 {
-  "name": "graph-node",
+  "name": "graph-node-js",
   "version": "0.0.1",
   "description": "module to manage graph in nodejs",
   "main": "index.js",
