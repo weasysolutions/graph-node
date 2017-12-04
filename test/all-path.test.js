@@ -14,6 +14,6 @@ describe('test to graph', () => {
         graph.setEdge(id3, id2, {});
         const array = graph.allPath();
         assert.equal(array.length, 9);
-        assert(array.map(({ edge }) => edge));
+        assert.deepEqual(array.map(({ edge }) => edge), [ 0, 0, 1, 1, 0, 0, 1, 0, 0 ]);
     });
 });
