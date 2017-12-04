@@ -1,6 +1,7 @@
 const assert = require('assert');
 
-const graph = require('../index');
+const Graph = require('../index');
+const graph = new Graph();
 
 describe('test to graph', () => {
     it('should add the node with setNode', () => {

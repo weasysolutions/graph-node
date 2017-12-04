@@ -6,13 +6,13 @@ const Graph = class extends advanced(nodes, edges, graph) {
     constructor() {
         super();
         this[graph] = [];
-        this.nodes = 0;
-        this.edges = 0;
+        this.nodes = -1;
+        this.edges = -1;
         this[nodes] = new Map();
         this[edges] = new Map();
     }
 };
 
 
-module.exports = new Graph();
+module.exports = Graph;
 
