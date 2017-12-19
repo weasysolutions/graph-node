@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/Cereceres/graph-node#readme",
   "dependencies": {
+    "dijkstra-algorithm": "0.0.1",
     "node-uid": "^0.1.3"
   }
 }

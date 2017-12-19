@@ -12,8 +12,12 @@ describe('test to graph', () => {
         graph.setEdge(id1, id2, {});
         graph.setEdge(id2, id3, {});
         graph.setEdge(id3, id2, {});
-        const array = graph.allPath();
+        const array = graph.pathWhateverDistance();
         assert.equal(array.length, 9);
-        assert.deepEqual(array.map(({ edge }) => edge), [ 0, 0, 1, 1, 0, 0, 1, 0, 0 ]);
+        assert.deepEqual(array.map(({ edge }) => edge), [
+            0, 0, 1,
+            1, 0, 0,
+            1, 0, 0
+        ]);
     });
 });
