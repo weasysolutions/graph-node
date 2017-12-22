@@ -1,8 +1,8 @@
 const graph = Symbol('graph');
 const nodes = Symbol('nodes');
 const edges = Symbol('edges');
-const advanced = require('./lib/advanced');
-const Graph = class extends advanced(nodes, edges, graph) {
+const core = require('./lib/core');
+const Graph = class extends core(nodes, edges, graph) {
     constructor() {
         super();
         this[graph] = [];
